@@ -1,3 +1,4 @@
+/* generic */
 body,
 h1, h2, h3, h4, h5, h6,
 blockquote, p, pre,
@@ -5,8 +6,276 @@ dl, dd, ol, ul,
 figure,
 hr,
 fieldset, legend {
-  margin: 0;
+  margin:  0;
   padding: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+html {
+  line-height: normal;
+  overflow-y: scroll;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7rem;
+  font-weight: 400;
+  background-color: #181818;
+  color: #fff;
+  height: auto; 
+  max-width: 100vw;
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  font-style: italic; 
+  vertical-align: middle; 
+}
+
+.o-wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.o-row {
+  display: flex;
+}
+
+.o-row--justified {
+  justify-content: space-between;
+  padding: 40px 40px 0;
+}
+
+.o-row--centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+}
+
+.o-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100vw;
+}
+
+.o-grid__cell {
+  padding-left: 2.8rem; 
+  flex: 0 1 20vw;
+}
+
+.o-flag {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.o-flag--reverse {
+  flex-direction: row-reverse;
+}
+
+.o-flag__img {
+  width: 50%;
+  height: auto;
+}
+
+.o-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-bg {
+  background-image: url('../Images/header-photo.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #181818;
+  width: 100vw;
+}
+
+.section1-bg {
+  background-image: url('../Images/slika-kafe.png');
+  background-repeat: no-repeat;
+  background-size: 50rem;
+  background-position: bottom;
+  background-color: #181818;
+}
+
+.section2-bg {
+  background-image: url('../Images/coffee.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section3-bg {
+  background-image: url('../Images/history.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.consumption__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding: 70px 20px;
+}
+
+.consumption__body {
+  padding: 30px 50px 200px;
+}
+
+.c-card__num {
+  font-size: 1.5rem;
+}
+
+.c-card__num span {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.c-card__underline {
+  content: "";
+  width: 2.5rem;
+  height: 0.1rem;
+  display: block;
+  background-color: #fff;
+  transform: translateY(-10px);
+}
+
+.c-card__img {
+  background-color: #fff;
+}
+
+
+.coffee-history {
+  text-align: justify;
+  color: #D3C1A6;
+  padding: 200px 0;
+}
+
+.coffee-history__title {
+  font-size: 13vw;
+  font-weight: 800;
+  opacity: 50%;
+}
+
+.coffee-history__body {
+  padding: 40px 90px;
+  color: #fff;
+  text-shadow: 1px 1px #181818;
+  line-height: 1.6;
+}
+
+.coffee-history-img {
+  display: none;
+}
+
+.production-shop__title {
+  font-size: 60px;
+  font-weight: 800;
+  opacity: 50%;
+  padding: 40px;
+  color: #D3C1A6;
+}
+
+.production-shop__body {
+  padding: 30px 60px;
+}
+
+.production-shop__body img {
+  width: 85px;
+}
+
+.c-btn {
+  width: 40%;
+  align-self: flex-end;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.u-text--centered {
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+
+  .header-bg {
+    width: 100%;
+    
+  }
+  .o-wrapper {
+    max-width: 1280px
+  }
+
+  .o-grid {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .o-row--centered {
+    align-items: flex-end;
+    padding-bottom: 50px;
+  }
+
+  .o-flag {
+    align-items: flex-start;
+  }
+
+  .o-flag--xl {
+    display: flex;
+    width: 100%;
+  }
+
+  .o-flag__body {
+    width: 50%;
+    align-self: center;
+    padding: 2rem;
+  }
+
+  .o-flag__img {
+    width: 50%;
+  }  
+
+  .section2-bg {
+    background-image: none;
+  }
+
+  .section3-bg {
+    background-image: none;
+  }
+
+  .production-shop__body{
+    display: flex;
+  }
+
+  .coffee-history {
+    padding: 2.5rem;
+  }
+
+  .coffee-history__title {
+    font-size: 5rem;
+  }
+
+  .coffee-history-img {
+    display: block;
+    max-width: 100%;
+    min-width: 500px;
+    object-fit: cover;
+  }
+
+  .coffee-history__body {
+    width: 100%;
+    padding: 0;
+  }
+
+
+}
