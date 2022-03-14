@@ -6,14 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <title>Coffee project</title>
 </head>
 <body>
   <!-- HEADER-->
   <header class="header-bg">
     <div class="o-wrapper">
-      <nav class="o-row o-row--justified c-nav-bar">
-        <div>
+      <nav class="o-row o-row--justified c-nav">
+        <div class="c-nav__logo">
           <img src="./Images/logo.png">
         </div>
         <div class="c-hamburger">
@@ -21,14 +23,14 @@
           <div class="c-hamburger__line"></div>
           <div class="c-hamburger__line"></div>
         </div>
-        <ul class="o-list-bare c-dropdown">
+        <ul class="o-list o-list--bare c-nav-links">
           <li><a href=#>Home</a></li>
           <li><a href=#>About</a></li>
           <li><a href=#>Production</a></li>
           <li><a href=#>shop</a></li>
         </ul>
       </nav>
-      <div class="o-row o-row--centered">
+      <div class="o-row o-row--centered header__text">
         <p>“Coffee is a language in itself.”</p>
       </div>
     </div>
@@ -41,34 +43,34 @@
       <div class="o-wrapper">
         <div class="consumption">
           <h1 class="consumption__title u-text--centered">Coffee Consumption by Type of Coffee</h1>
-          <div class="o-grid consumption__body">
+          <div class="o-grid o-grid--small consumption__body">
             <div class="o-grid__cell c-card">
-              <p class="c-card__num"><span>5</span>%</p>
+              <p class="c-card__num"><span class="counter">5</span>%</p>
               <div class="c-card__underline"></div>
               <p>Instant</p>
             </div>
             <div class="o-grid__cell c-card">
-              <p class="c-card__num"><span>10</span>%</p>
+              <p class="c-card__num"><span class="counter">10</span>%</p>
               <div class="c-card__underline"></div>
               <p>Decaf</p>
             </div>
             <div class="o-grid__cell c-card">
-              <p class="c-card__num"><span>11</span>%</p>
+              <p class="c-card__num"><span class="counter">11</span>%</p>
               <div class="c-card__underline"></div>
               <p>Non-espresso<br> based beverages</p>
             </div>
             <div class="o-grid__cell c-card">
-              <p class="c-card__num"><span>24</span>%</p>
+              <p class="c-card__num"><span class="counter">24</span>%</p>
               <div class="c-card__underline"></div>
               <p>Espresso based<br> beverages</p>
             </div>
             <div class="o-grid__cell c-card">
-              <p class="c-card__num"><span>34</span>%</p>
+              <p class="c-card__num"><span class="counter">34</span>%</p>
               <div class="c-card__underline"></div>
               <p>Espresso based<br> beverages</p>
             </div>
             <div class="o-grid__cell c-card">
-              <p class="c-card__num"><span>44</span>%</p>
+              <p class="c-card__num"><span class="counter">44</span>%</p>
               <div class="c-card__underline"></div>
               <p>Traditional coffee</p>
             </div>
@@ -77,7 +79,7 @@
       </div>
     </section>
 
-    <section class="section2-bg">
+    <section class="coffee-bg">
         <div class="o-wrapper o-flag o-flag--large">
           <div class="o-flag__img coffee-history-img">
             <img src="./Images/coffee.png" alt="">
@@ -94,8 +96,8 @@
         </div>
     </section>
 
-    <section class="section3-bg">
-      <div class="o-wrapper o-flag o-flag--large o-flag--reverse">
+    <section class="history-bg">
+      <div class="o-wrapper o-flag o-flag--reverse">
         <div class="o-flag__img coffee-history-img">
           <img src="./Images/history.png" alt="">
         </div>
@@ -116,8 +118,8 @@
         <div class="production-shop">
           <h3 class="production-shop__title u-text--centered">production</h3>
           <p class="u-text--centered">Coffee production is the industrial process of converting the raw fruit of the coffee plant into the finished coffee. The coffee cherry has the fruit or pulp removed leaving the seed or bean which is then dried. While all green coffee is processed, the method that is used varies and can have a significant effect on the flavor of roasted and brewed coffee. Coffee production is a major source of income for 12.5 million households, most in developing countries.</p>
-          <div class="production-shop__body">
-            <div class="o-flag o-flag--small o-flag--reverse">
+          <div class="production-shop__body c-timeline">
+            <div class="o-flag o-flag--reverse">
               <div class="o-flag__img">
                 <img src="Images/coffee production-01.png" alt="">
               </div>
@@ -182,61 +184,61 @@
       <div class="o-wrapper">
         <div class="production-shop">
           <h3 class="production-shop__title u-text--centered">shop</h3>
-          <p class="u-text--centered">Explore some of our finest coffies</p>
-          <div class="o-grid">
-            <div  class="o-grid__cell c-card">
-              <div class="c-card__img">
+          <p class="production-shop__text u-text--centered">Explore some of our finest coffies</p>
+          <div class="o-grid o-grid--large">
+            <div class="o-grid__cell c-shop-card">
+              <div class="c-shop-card__img">
                 <img src="images/1-01.jpg" alt="cup of coffee">
               </div>
-              <div class="o-row o-row--justified c-card__body">
+              <div class="o-row o-row--justified c-shop-card__body">
                 <div>
                   <h4>lorem ipsum</h4>
                   <p>lorem ipsum</p>
                 </div>
-                <div>
-                  <p>199</p>
+                <div class="c-shop-card__price">
+                  <p>1<span>99</span></p>
                 </div>
               </div>
             </div>
-            <div class="o-grid__cell c-card">
-              <div class="c-card__img">
+            <div class="o-grid__cell c-shop-card">
+              <div class="c-shop-card__img">
                 <img src="images/2-01.png" alt="cup of coffee">
               </div>
-              <div class="o-row o-row--justified c-card__body">
+              <div class="o-row o-row--justified c-shop-card__body">
                 <div>
                   <h4>lorem ipsum</h4>
                   <p>lorem ipsum</p>
                 </div>
-                <div>
-                  <p>199</p>
+                <div class="c-shop-card__price">
+                  <p>1<span>99</span></p>
                 </div>
               </div>
             </div>
-            <div class="o-grid__cell c-card">
-              <div class="c-card__img">
+            <div class="o-grid__cell c-shop-card">
+              <div class="c-shop-card__img">
                 <img src="images/3-01.png" alt="cup of coffee">
               </div>
-              <div class="o-row o-row--justified c-card__body">
+              <div class="o-row o-row--justified c-shop-card__body">
                 <div>
                   <h4>lorem ipsum</h4>
                   <p>lorem ipsum</p>
                 </div>
-                <div>
-                  <p>199</p>
+                <div class="c-shop-card__price">
+                  <p>1<span>99</span></p>
                 </div>
               </div>
             </div>
-            <div class="o-grid__cell c-card">
-              <div class="c-card__img">
+            <div class="o-grid__cell c-shop-card">
+              <div class="c-shop-card__img">
                 <img src="images/4-01.png" alt="cup of coffee">
               </div>
-              <div class="o-row o-row--justified c-card__body">
+              <div class="o-row o-row--justified c-shop-card__body">
                 <div>
                   <h4>lorem ipsum</h4>
                   <p>lorem ipsum</p>
                 </div>
-                <div>
-                  <p>199</p>
+                <div class="c-shop-card__price">
+                  <p>1<span>99</span></p>
                 </div>
               </div>
             </div>  
@@ -248,41 +250,66 @@
   </main>
     <!-- FOOTER -->
   <footer>
-    <div class="o-flag o-flag--large">
+    <div class="o-flag">
       <div class="o-flag__img">
-        <img src="images/hand-pouring-coffee.png" alt="hand pouring coffee">
+        <img src="images/hand-pouring-coffee2.png" alt="hand pouring coffee">
       </div>
-      <div class="o-flag__body">
-        <div>
-          <h5>newsletter</h5>
-          <p>Subscribe to our newsletter to keep up to date with all the news we have for you</p>
+      <div class="o-flag__body footer--top">
+        <div class="newsletter">
+          <h5 class="newsletter__title">newsletter</h5>
+          <p class="newsletter__text">Subscribe to our newsletter to keep up to date with all the news we have for you</p>
         </div>
         <div>
           <form class="o-form">
-            <input type="text" placeholder="Your Email">
-            <button type="button" class="c-btn">Confirm</button>
+            <input type="text" placeholder="Your Email" class="c-input c-input--primary">
+            <button type="button" class="c-btn c-btn--primary">Confirm</button>
           </form> 
         </div>
       </div>
     </div>
-    <div class="o-row o-row--justified">
+    <div class="o-row o-row--justified footer--bottom">
       <div>
-        <p>© 2022 Stefan Glumac.<br>
-        All rights reserved.</p>
+        <p>© 2022 Stefan Glumac.</p>
+        <p>All rights reserved.</p>
       </div>
-      <div>
-        <p>Privacy Policy<br>
-        Terms and Conditions<br>  
-        Privacy and Data Handling Policy</p>
-      </div>
+      <ul class="o-list o-list--bare">
+        <li>Privacy Policy</li>
+        <li>Terms and Conditions</li>
+        <li>Privacy and Data Handling Policy</li>
+      </ul>
     </div>
-    <div class="o-row">
+    <div class="o-row social-icons">
       <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter "></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
       <a href="#"><i class="fab fa-github "></i></a>
       <a href="#"><i class="fab fa-linkedin "></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a> 
     </div>
   </footer>
+
+  <a href="#" class="c-btn c-btn-rounded back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <script>
+    const hamburger = document.querySelector(".c-hamburger");
+    const navLinks = document.querySelector(".c-nav-links");
+    const links = document.querySelector(".c-nav-links li");
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle("open");
+    })
+  </script>
+  <script src="jquery.counterup.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script>
+    jQuery(document).ready(function( $ ) 
+    {
+      $('.counter').counterUp({
+    delay: 10,
+    time: 500
+    });
+    });
+  </script>
 </body>
 </html>
