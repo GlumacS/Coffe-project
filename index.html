@@ -12,8 +12,8 @@
 </head>
 <body>
   <!-- HEADER-->
-  <header class="header-bg">
-    <div class="o-wrapper">
+  <header>
+    <div class="o-wrapper header-bg">
       <nav class="o-row o-row--justified c-nav">
         <div class="c-nav__logo">
           <img src="./Images/logo.png">
@@ -80,12 +80,12 @@
     </section>
 
     <section class="coffee-bg">
-        <div class="o-wrapper o-flag o-flag--large">
+        <div class="o-wrapper o-flag o-flag--xl o-flag--large">
           <div class="o-flag__img coffee-history-img">
             <img src="./Images/coffee.png" alt="">
           </div>
           <div class="o-flag__body coffee-history">
-            <div class="coffee-history__title">
+            <div class="coffee-history__title u-text--centered">
               <h2>coffee</h2>
             </div>
             <div class="coffee-history__body">
@@ -97,12 +97,12 @@
     </section>
 
     <section class="history-bg">
-      <div class="o-wrapper o-flag o-flag--reverse">
+      <div class="o-wrapper o-flag o-flag--xl o-flag--reverse">
         <div class="o-flag__img coffee-history-img">
           <img src="./Images/history.png" alt="">
         </div>
         <div class="o-flag__body coffee-history">
-          <div class="coffee-history__title">
+          <div class="coffee-history__title u-text--centered">
             <h2>history</h2>
           </div>
           <div class="coffee-history__body">
@@ -118,64 +118,50 @@
         <div class="production-shop">
           <h3 class="production-shop__title u-text--centered">production</h3>
           <p class="u-text--centered">Coffee production is the industrial process of converting the raw fruit of the coffee plant into the finished coffee. The coffee cherry has the fruit or pulp removed leaving the seed or bean which is then dried. While all green coffee is processed, the method that is used varies and can have a significant effect on the flavor of roasted and brewed coffee. Coffee production is a major source of income for 12.5 million households, most in developing countries.</p>
-          <div class="production-shop__body c-timeline">
-            <div class="o-flag o-flag--reverse">
-              <div class="o-flag__img">
-                <img src="Images/coffee production-01.png" alt="">
+          <ul class="o-list o-list--bare o-list--centered o-list--inline c-timeline">
+            <li class="o-list__item">
+              <div class="c-timeline__item">Processing</div>
+              <div>
+                <img src="./Images/coffee production-01.png">
               </div>
-              <div class="o-flag__body">
-                <p>Processing</p>
+            </li>
+            <li class="o-list__item">
+              <div class="c-timeline__item">Roasting</div>
+              <div>
+                <img src="./Images/coffee production-02.png">
               </div>
-            </div>
-            <div class="o-flag o-flag--reverse">
-              <div class="o-flag__img">
-                <img src="Images/coffee production-02.png" alt="">
+            </li>
+            <li class="o-list__item">
+              <div class="c-timeline__item">Grading roasted beans</div>
+              <div>
+                <img src="./Images/coffee production-03.png">
               </div>
-              <div class="o-flag__body">
-                <p>Roasting</p>
+            </li>
+            <li class="o-list__item">
+              <div class="c-timeline__item">Decaffeination</div>
+              <div>
+                <img src="./Images/coffee production-04.png">
               </div>
-            </div>
-            <div class="o-flag o-flag--reverse">
-              <div class="o-flag__img">
-                <img src="Images/coffee production-03.png" alt="">
+            </li>
+            <li class="o-list__item">
+              <div class="c-timeline__item">Storage</div>
+              <div>
+                <img src="./Images/coffee production-05.png">
               </div>
-              <div class="o-flag__body">
-                <p>Grading roasted beans</p>
+            </li>
+            <li class="o-list__item">
+              <div class="c-timeline__item">Brewing</div>
+              <div>
+                <img src="./Images/coffee production-06.png">
               </div>
-            </div>
-            <div class="o-flag o-flag--reverse">
-              <div class="o-flag__img">
-                <img src="Images/coffee production-04.png" alt="">
+            </li>
+            <li class="o-list__item">
+              <div class="c-timeline__item">Serving</div>
+              <div>
+                <img src="./Images/coffee production-07.png">
               </div>
-              <div class="o-flag__body">
-                <p>Decaffeination</p>
-              </div>
-            </div>
-            <div class="o-flag o-flag--reverse">
-              <div class="o-flag__img">
-                <img src="Images/coffee production-05.png" alt="">
-              </div>
-              <div class="o-flag__body">
-                <p>Storage</p>
-              </div>
-            </div>
-            <div class="o-flag o-flag--reverse">
-              <div class="o-flag__img">
-                <img src="Images/coffee production-06.png" alt="">
-              </div>
-              <div class="o-flag__body">
-                <p>Brewing</p>
-              </div>
-            </div>
-            <div class="o-flag o-flag--reverse">
-              <div class="o-flag__img">
-                <img src="Images/coffee production-07.png" alt="">
-              </div>
-              <div class="o-flag__body">
-                <p>Serving</p>
-              </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -250,11 +236,11 @@
   </main>
     <!-- FOOTER -->
   <footer>
-    <div class="o-flag">
+    <div class="o-flag footer--top">
       <div class="o-flag__img">
         <img src="images/hand-pouring-coffee2.png" alt="hand pouring coffee">
       </div>
-      <div class="o-flag__body footer--top">
+      <div class="o-flag__body">
         <div class="newsletter">
           <h5 class="newsletter__title">newsletter</h5>
           <p class="newsletter__text">Subscribe to our newsletter to keep up to date with all the news we have for you</p>
@@ -278,7 +264,7 @@
         <li>Privacy and Data Handling Policy</li>
       </ul>
     </div>
-    <div class="o-row social-icons">
+    <div class="o-row o-row--centered social-icons">
       <a href="#"><i class="fab fa-facebook"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>
       <a href="#"><i class="fab fa-github "></i></a>
@@ -287,7 +273,7 @@
     </div>
   </footer>
 
-  <a href="#" class="c-btn c-btn-rounded back-to-top">
+  <a href="#" class="back-to-top">
     <i class="fas fa-chevron-up"></i>
   </a>
 
