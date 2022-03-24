@@ -12,8 +12,8 @@
 </head>
 <body>
   <!-- HEADER-->
-  <header>
-    <div class="o-wrapper header-bg">
+  <header class="header-bg">
+    <div class="o-wrapper">
       <nav class="o-row o-row--justified c-nav">
         <div class="c-nav__logo">
           <img src="./Images/logo.png">
@@ -30,8 +30,8 @@
           <li><a href=#>shop</a></li>
         </ul>
       </nav>
-      <div class="o-row o-row--centered header__text">
-        <p>“Coffee is a language in itself.”</p>
+      <div class="o-row o-row--centered">
+        <p class="c-header__title">“Coffee is a language in itself.”</p>
       </div>
     </div>
   </header>
@@ -41,9 +41,9 @@
   <article>
     <section class="section1-bg">
       <div class="o-wrapper">
-        <div class="consumption">
-          <h1 class="consumption__title u-text--centered">Coffee Consumption by Type of Coffee</h1>
-          <div class="o-grid o-grid--small consumption__body">
+        <div class="o-section o-section--s">
+          <h1 class="o-section__title o-section__title--pale">Coffee Consumption by Type of Coffee</h1>
+          <div class="o-grid o-grid--small">
             <div class="o-grid__cell c-card">
               <p class="c-card__num"><span class="counter">5</span>%</p>
               <div class="c-card__underline"></div>
@@ -79,44 +79,48 @@
       </div>
     </section>
 
-    <section class="coffee-bg">
-        <div class="o-wrapper o-flag o-flag--xl o-flag--large">
-          <div class="o-flag__img coffee-history-img">
-            <img src="./Images/coffee.png" alt="">
-          </div>
-          <div class="o-flag__body coffee-history">
-            <div class="coffee-history__title u-text--centered">
-              <h2>coffee</h2>
+    <section class="section2-bg">
+        <div class="o-wrapper c-bg-layer">
+          <div class="o-section o-flag o-flag--xl"> 
+            <div class="o-flag__img coffee-history-img">
+              <img src="./Images/coffee.png" alt="">
             </div>
-            <div class="coffee-history__body">
-              <p>Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain flowering plants in the Coffea genus. From the coffee fruit, the seeds are separated to produce a stable, raw product: unroasted green coffee. The seeds are then roasted, a process which transforms them into a consumable product: roasted coffee, which is ground into fine particles that are typically steeped in hot water before being filtered out, producing a cup of coffee.</p><br>
-              <p>Coffee is darkly colored, bitter, slightly acidic and has a stimulating effect in humans, primarily due to its caffeine content. It is one of the most popular drinks in the worl[4] and can be prepared and presented in a variety of ways (e.g., espresso, French press, caffè latte, or already-brewed canned coffee). It is usually served hot, althoughchilled  or iced coffee is common. Sugar, sugar substitutes, milk or cream are often used to lessen the bitter taste or enhance the flavor.</p>
+            <div class="o-flag__body u-text--justified">
+              <div class="o-section__title o-section__title--large">
+                <h2>coffee</h2>
+              </div>
+              <div class="o-box">
+                <p>Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain flowering plants in the Coffea genus. From the coffee fruit, the seeds are separated to produce a stable, raw product: unroasted green coffee. The seeds are then roasted, a process which transforms them into a consumable product: roasted coffee, which is ground into fine particles that are typically steeped in hot water before being filtered out, producing a cup of coffee.</p><br>
+                <p>Coffee is darkly colored, bitter, slightly acidic and has a stimulating effect in humans, primarily due to its caffeine content. It is one of the most popular drinks in the worl[4] and can be prepared and presented in a variety of ways (e.g., espresso, French press, caffè latte, or already-brewed canned coffee). It is usually served hot, althoughchilled  or iced coffee is common. Sugar, sugar substitutes, milk or cream are often used to lessen the bitter taste or enhance the flavor.</p>
+              </div>
             </div>
           </div>
         </div>
     </section>
 
-    <section class="history-bg">
-      <div class="o-wrapper o-flag o-flag--xl o-flag--reverse">
-        <div class="o-flag__img coffee-history-img">
-          <img src="./Images/history.png" alt="">
-        </div>
-        <div class="o-flag__body coffee-history">
-          <div class="coffee-history__title u-text--centered">
-            <h2>history</h2>
+    <section class="section3-bg">
+      <div class="o-wrapper c-bg-layer">
+        <div class=" o-section o-flag o-flag--xl o-flag--reverse">
+          <div class="o-flag__img coffee-history-img">
+            <img src="./Images/history.png" alt="">
           </div>
-          <div class="coffee-history__body">
-            <p>The history of coffee begins in the 15th century, when coffee beans were first exported out of Ethiopia to Yemen by Somali merchants. Sufi monasteries in Yemen employed coffee as an aid to concentration during prayers. It soon spread to Mecca and Medina. By the early 16th century, it had reached the rest of the Middle East, South India (Karnataka), Persia, Turkey, India, and northern Africa. Coffee then spread to the Balkans, Italy, and to the rest of Europe, as well as Southeast Asia.</p><br>
-            <p>Numerous legends place the beginning of coffee's history at much earlier dates. According to one legend, ancestors of today's Kafficho people in the Kingdom of Kaffa (present-dayEthiopia) were the first to recognize the energizing effect of the coffee plant. However, no direct evidence that has been found earlier than the 15th century, or even wherecoffee was first cultivated. The story of Kaldi, the 9th-century Ethiopian goatherd who discovered the stimulating effect of coffee when he noticed how excited his goats becameafter eating the beans from a coffee plant, did not appear in writing until 1671 and is probably apocryphal.</p>
-        </div>
+          <div class="o-flag__body u-text--justified">
+            <div class="o-section__title o-section__title--large">
+              <h2>history</h2>
+            </div>
+            <div class="o-box">
+              <p>The history of coffee begins in the 15th century, when coffee beans were first exported out of Ethiopia to Yemen by Somali merchants. Sufi monasteries in Yemen employed   coffee as an aid to concentration during prayers. It soon spread to Mecca and Medina. By the early 16th century, it had reached the rest of the Middle East, South India  (Karnataka), Persia, Turkey, India, and northern Africa. Coffee then spread to the Balkans, Italy, and to the rest of Europe, as well as Southeast Asia.</p><br>
+              <p>Numerous legends place the beginning of coffee's history at much earlier dates. According to one legend, ancestors of today's Kafficho people in the Kingdom of Kaffa  (present-dayEthiopia) were the first to recognize the energizing effect of the coffee plant. However, no direct evidence that has been found earlier than the 15th century, or   even wherecoffee was first cultivated. The story of Kaldi, the 9th-century Ethiopian goatherd who discovered the stimulating effect of coffee when he noticed how excited his   goats becameafter eating the beans from a coffee plant, did not appear in writing until 1671 and is probably apocryphal.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section>
       <div class="o-wrapper">
-        <div class="production-shop">
-          <h3 class="production-shop__title u-text--centered">production</h3>
+        <div class="c-production-shop u-margin-top">
+          <h3 class="o-section__title">production</h3>
           <p class="u-text--centered">Coffee production is the industrial process of converting the raw fruit of the coffee plant into the finished coffee. The coffee cherry has the fruit or pulp removed leaving the seed or bean which is then dried. While all green coffee is processed, the method that is used varies and can have a significant effect on the flavor of roasted and brewed coffee. Coffee production is a major source of income for 12.5 million households, most in developing countries.</p>
           <ul class="o-list o-list--bare o-list--centered o-list--inline c-timeline">
             <li class="o-list__item">
@@ -168,10 +172,10 @@
     
     <section>
       <div class="o-wrapper">
-        <div class="production-shop">
-          <h3 class="production-shop__title u-text--centered">shop</h3>
-          <p class="production-shop__text u-text--centered">Explore some of our finest coffies</p>
-          <div class="o-grid o-grid--large">
+        <div class="c-production-shop u-margin-top u-margin-bottom">
+          <h3 class="o-section__title">shop</h3>
+          <p class="u-text--centered">Explore some of our finest coffies</p>
+          <div class="o-grid o-grid--large c-">
             <div class="o-grid__cell c-shop-card">
               <div class="c-shop-card__img">
                 <img src="images/1-01.jpg" alt="cup of coffee">
@@ -242,7 +246,7 @@
       </div>
       <div class="o-flag__body">
         <div class="newsletter">
-          <h5 class="newsletter__title">newsletter</h5>
+          <h5 class="o-section__title o-section__title--pale o-section__title--bottom">newsletter</h5>
           <p class="newsletter__text">Subscribe to our newsletter to keep up to date with all the news we have for you</p>
         </div>
         <div>
@@ -253,23 +257,25 @@
         </div>
       </div>
     </div>
-    <div class="o-row o-row--justified footer--bottom">
-      <div>
-        <p>© 2022 Stefan Glumac.</p>
-        <p>All rights reserved.</p>
+    <div class="c-footer--bottom">
+      <div class="o-row o-row--justified">
+        <div>
+          <p>© 2022 Stefan Glumac.</p>
+          <p>All rights reserved.</p>
+        </div>
+        <ul class="o-list o-list--right o-list--bare">
+          <li>Privacy Policy</li>
+          <li>Terms and Conditions</li>
+          <li>Privacy and Data Handling Policy</li>
+        </ul>
       </div>
-      <ul class="o-list o-list--bare">
-        <li>Privacy Policy</li>
-        <li>Terms and Conditions</li>
-        <li>Privacy and Data Handling Policy</li>
-      </ul>
-    </div>
-    <div class="o-row o-row--centered social-icons">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-github "></i></a>
-      <a href="#"><i class="fab fa-linkedin "></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a> 
+      <div class="o-row o-row--centered c-social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github "></i></a>
+        <a href="#"><i class="fab fa-linkedin "></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a> 
+      </div>
     </div>
   </footer>
 
