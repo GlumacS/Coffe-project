@@ -8,10 +8,11 @@
 }
 
 html {
-  line-height: normal;
+  line-height: 1.3;
   overflow-y: scroll;
   height: 100%;
   background-color: white;
+  
 }
 
 body {
@@ -20,7 +21,8 @@ body {
   font-weight: 400;
   background-color: #181818;
   color: #fff;
-  min-height: 100vh; 
+  min-height: 100vh;
+  min-width: 375px;
   width: 100%;
 }
  
@@ -31,7 +33,7 @@ header {
   background-repeat: no-repeat;
   background-color: #181818;
   height: 100vh;
-}
+} 
 
 img {
   max-width: 100%;
@@ -155,9 +157,6 @@ img {
   background-position: center;
 }
 
-.coffee-history-img {
-  display: none;
-}
 
 /* COMPONENTS */
 .c-header__title {
@@ -204,6 +203,7 @@ img {
   color: #fff;
   text-decoration: none;
 }
+
 .c-hamburger {
   cursor: pointer;
   z-index: 2;
@@ -225,22 +225,45 @@ img {
   margin-top: 70px;
 }
 
-.c-coffee-history {
-  padding: 250px 0;
+/* COFFEE HISTORY */
+
+.c-coffee-history--small {
   background-color: #181818;  
-  opacity: 0.5;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-coffe-history__body {
+  text-align: center;
+  z-index: 1;
 }
 
 .c-coffee-history__title {
   color: #D3C1A6;
-  font-size: 4.3rem;
-  opacity: .8;
+  font-size: 4.7rem;
   margin-bottom: 40px;
+  opacity: .8;
 }
 
-.c-coffee-history__body {
-  padding: 0 60px;
+.c-coffee-history__text {
+  color: #fff;
+  opacity: .8;
+  padding: 0 80px;
 }
+
+.c-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+/* PRODUCTION SHOP */
 
 .c-production-shop {
   font-size: .7rem;
@@ -350,18 +373,20 @@ img {
   z-index: 1;
 }
 
-.c-newsletter {
-  position: relative;
-  right: 50px;
+.c-footer {
   font-size: .6rem;
 }
 
+.c-newsletter {
+  position: relative;
+  right: 40px;
+}
+
 .c-newsletter__title {
-  font-size: 30px;
+  font-size: 1.9rem;
   margin-bottom: 10px;
   text-align: start;
 }
-
 
 .c-input {
   padding: 8px;
@@ -387,7 +412,6 @@ img {
 .c-footer--bottom {
   margin-top: 30px;
   padding: 20px;
-  font-size: .7rem;
 }
 
 .c-social-icons {
@@ -435,17 +459,7 @@ img {
 
 @media screen and (min-width: 800px)  {
 
-  .section1-bg {
-    background-size: contain;
-  }
-  .section2-bg {
-    background-image: none;
-  }
-
-  .section3-bg {
-    background-image: none;
-  }
-
+  
   .o-grid {
     flex-wrap: nowrap;
   }
@@ -463,7 +477,7 @@ img {
   }
 
   .o-flag--xl .o-flag__body {
-    align-self: center;
+    align-self: flex-end;
     flex: 1;
   }
 
@@ -492,7 +506,11 @@ img {
   }
 
   .c-coffee-consumption__body {
-    margin-bottom: 150px;
+    margin-bottom: 0;
+  }
+
+  .c-video-container {
+    position: static;
   }
 
   .c-coffee-history {
@@ -500,16 +518,32 @@ img {
     opacity: 1;
   }
 
-  .c-coffee-history__title {
-    font-size: 5vw;
-  }
-
-  .coffee-history-img {
-    display: block;
-    width: 100%;
+  .c-coffee-history--small {
+    position: relative;
     height: auto;
   }
-  
+
+  .c-coffee-history__title {
+    font-size: 12vw;
+    position: absolute;
+  }
+
+  .c-coffee-history__title--right {
+    left: 20%;
+    top: 5%;
+  }
+
+  .c-coffee-history__title--left { /* prepraviti? */
+    top: 5%;
+    left: 5%;
+  }
+
+  .c-coffee-history__text {
+    position: relative;
+    margin-bottom: 150px;
+    font-size: 1.2vw;      /* staviti CLAMP */
+  }
+
   .c-production-shop__title {
     font-size: 75px;
   }
@@ -554,6 +588,11 @@ img {
 
   .c-newsletter {
     position: static;
+  }
+
+  #background-video {
+    width: 100%;
+    height: auto;
   }
 
 }
