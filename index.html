@@ -12,7 +12,7 @@
 </head>
 <body>
   <!-- HEADER-->
-  <header class="header-bg">
+  <header class="c-header">
     <div class="o-wrapper">
       <nav class="o-row o-row--justified c-nav">
         <div class="c-nav__logo">
@@ -30,6 +30,11 @@
           <li><a href=#>shop</a></li>
         </ul>
       </nav>
+      <div class="c-header-bg">
+        <video class="c-header-bg__video" class="bg-video" autoplay loop muted poster="Images/history.png">
+          <source src="wetransfer_coffee-video_2022-02-11_2140/pexels-tp-motion-8546328.mp4" type="video/mp4">
+        </video>
+      </div>
       <div class="o-row o-row--centered">
         <p class="c-header__title">“Coffee is a language in itself.”</p>
       </div>
@@ -39,15 +44,15 @@
   <main>
 
   <article>
-    <section class="section1-bg">
-      <div class="o-wrapper c-coffee-consumption">
+    <section>
+      <div class="c-coffee-consumption">
         <div class="o-section">
-          <h1 class="o-section__title o-section__title--pale">Coffee Consumption by Type of Coffee</h1>
+          <h1 class="o-section__title o-section__title--pale c-coffee-consumption__title">Coffee Consumption by Type of Coffee</h1>
           <div class="o-grid o-grid--small c-coffee-consumption__body">
-            <div class="o-grid__cell c-card">
+            <div class="o-grid__cell c-card c-card--first">
               <p class="c-card__num"><span class="counter">5</span>%</p>
               <div class="c-card__underline"></div>
-              <p>Instant</p>
+              <p class="c-card__text">Instant</p>
             </div>
             <div class="o-grid__cell c-card">
               <p class="c-card__num"><span class="counter">10</span>%</p>
@@ -75,6 +80,10 @@
               <p>Traditional coffee</p>
             </div>
           </div>
+          <div class="c-coffee-consumption__img">
+            <img class="c-coffee-consumption__img--small" src="./Images/slika-kafe 2.png" alt="">
+            <img class="c-coffee-consumption__img--large" src="./Images/slika-kafe.png" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -84,14 +93,14 @@
           <div class="o-section o-flag o-flag--xl"> 
             <div class="o-flag__img c-video-container">
               <video id="background-video" class="bg-video" autoplay loop muted poster="Images/coffee.png">
-                <source src="wetransfer_coffee-video_2022-02-11_2140/Coffee Video.mov" type="video/mp4">
+                <source src="wetransfer_coffee-video_2022-02-11_2140/Coffee Video.mov" style="width: 100%" type="video/mp4">
               </video>
             </div>
             <div class="o-flag__body c-coffee-history__body u-text--justified">
               <div class="o-section__title c-coffee-history__title c-coffee-history__title--right">
                 <h2>coffee</h2>
               </div>
-              <div class="c-coffee-history__text">
+              <div class="c-coffee-history__text animated animatedFadeInUp fadeInUp">
                 <p>Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain flowering plants in the Coffea genus. From the coffee fruit, the seeds are separated to produce a stable, raw product: unroasted green coffee. The seeds are then roasted, a process which transforms them into a consumable product: roasted coffee, which is ground into fine particles that are typically steeped in hot water before being filtered out, producing a cup of coffee.</p><br>
                 <p>Coffee is darkly colored, bitter, slightly acidic and has a stimulating effect in humans, primarily due to its caffeine content. It is one of the most popular drinks in the worl[4] and can be prepared and presented in a variety of ways (e.g., espresso, French press, caffè latte, or already-brewed canned coffee). It is usually served hot, althoughchilled or iced coffee is common. Sugar, sugar substitutes, milk or cream are often used to lessen the bitter taste or enhance the flavor.</p>
               </div>
@@ -112,7 +121,7 @@
             <div class="o-section__title c-coffee-history__title c-coffee-history__title--left">
               <h2>history</h2>
             </div>
-            <div class="c-coffee-history__text">
+            <div class="c-coffee-history__text c-coffee-history__text--left animated animatedFadeInUp fadeInUp">
               <p>The history of coffee begins in the 15th century, when coffee beans were first exported out of Ethiopia to Yemen by Somali merchants. Sufi monasteries in Yemen employed   coffee as an aid to concentration during prayers. It soon spread to Mecca and Medina. By the early 16th century, it had reached the rest of the Middle East, South India  (Karnataka), Persia, Turkey, India, and northern Africa. Coffee then spread to the Balkans, Italy, and to the rest of Europe, as well as Southeast Asia.</p><br>
               <p>Numerous legends place the beginning of coffee's history at much earlier dates. According to one legend, ancestors of today's Kafficho people in the Kingdom of Kaffa  (present-dayEthiopia) were the first to recognize the energizing effect of the coffee plant. However, no direct evidence that has been found earlier than the 15th century, or even wherecoffee was first cultivated. The story of Kaldi, the 9th-century Ethiopian goatherd who discovered the stimulating effect of coffee when he noticed how excited his goats becameafter eating the beans from a coffee plant, did not appear in writing until 1671 and is probably apocryphal.</p>
             </div>
@@ -129,7 +138,7 @@
           <ul class="o-list o-list--bare o-list--centered o-list--inline c-timeline">
             <li class="o-list__item">
               <div class="c-timeline__item">Processing</div>
-              <div>
+              <div class="c-timeline__img">
                 <img src="./Images/coffee production-01.png">
               </div>
             </li>
@@ -261,7 +270,7 @@
         </div>
       </div>
     </div>
-    <div class="c-footer--bottom">
+    <div class="o-wrapper c-footer--bottom">
       <div class="o-row o-row--justified">
         <div>
           <p>© 2022 Stefan Glumac.</p>
